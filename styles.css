@@ -11,13 +11,13 @@ body{
 .topbar{
 	text-align: center;
 	display: inline-block;
-	background-color: #7183a7;
+	background-color: #adbad3;
 	margin: 10 auto;
 	padding: 10px;
 	width: 30%;
 }
 .center{
-	background-color: #7183a7; 
+	background-color: #adbad3; 
 	text-align: center;
 	padding: 10px;
 	word-wrap: break-word;
@@ -29,7 +29,7 @@ body{
 #resume{
 	text-align: center;
 	padding: 20px;
-	background-color: #7183a7;
+	background-color: #adbad3;
 	width: 650;
 	margin: 0 auto;
 	margin-bottom: 20px;
@@ -40,7 +40,7 @@ body{
 }
 
 #top{
-	background-color: #7183a7;
+	background-color: #adbad3;
 	text-align: center;
 	width: 30%;
 	margin: 20px auto;
