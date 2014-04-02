@@ -1,0 +1,63 @@
+body{
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background-color: #2d4065;
+	text-align: center;
+}
+
+
+
+
+.sidebar{
+	display: inline-block;
+	background-color: #7183a7;
+	margin: 10 auto;
+	padding: 10px;
+	width: 30%;
+	margin-right: 10px;
+}
+.center{
+	background-color: #7183a7; 
+	text-align: center;
+	padding: 10px;
+	word-wrap: break-word;
+	width: 50%;
+	margin: 10 auto;
+	height: auto;
+}
+
+#resume{
+	text-align: center;
+	padding: 20px;
+	background-color: #7183a7;
+	width: 650;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#page2{
+	text-align: middle;
+}
+
+#top{
+	background-color: #7183a7;
+	text-align: center;
+	width: 700;
+	margin: 20px auto;
+	height: auto;
+
+}
+
+#pic{
+	opacity: 0.88;
+	margin: 0 auto;
+}
+
+li{
+	margin: 5px;
+	list-style-type: none;
+	display: inline-block;
+}
+
+div{
+	opacity: 0.9;
+}
