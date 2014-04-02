@@ -3,7 +3,6 @@ body{
 	background-color: #2d4065;
 	text-align: center;
 	background-image: url(http://www.wallmay.net/thumbnails/detail/20120802/cityscapes%20new%20york%20city%201920x1080%20wallpaper_www.wallmay.com_86.jpg);
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-size: 100%;
@@ -43,10 +42,11 @@ body{
 #top{
 	background-color: #7183a7;
 	text-align: center;
-	width: 700;
+	width: 30%;
 	margin: 20px auto;
 	height: auto;
 	display: inline-block;
+
 }
 
 #pic{
