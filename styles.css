@@ -5,6 +5,7 @@ body{
 }
 
 .sidebar{
+	text-align: center;
 	display: inline-block;
 	background-color: #7183a7;
 	margin: 10 auto;
