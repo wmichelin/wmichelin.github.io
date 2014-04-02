@@ -9,7 +9,7 @@ body{
 	background-size: 100%;
 }
 
-.sidebar{
+.topbar{
 	text-align: center;
 	display: inline-block;
 	background-color: #7183a7;
@@ -46,7 +46,7 @@ body{
 	width: 700;
 	margin: 20px auto;
 	height: auto;
-
+	display: inline-block;
 }
 
 #pic{
@@ -61,5 +61,7 @@ li{
 }
 
 div{
-	opacity: 0.9;
+	opacity: 0.95;
 }
+
+
