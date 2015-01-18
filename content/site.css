@@ -58,11 +58,36 @@ body{
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 
-}.navItem.active{
+}.navItem:hover{
 	text-decoration: underline;
 	color: gray;
     -webkit-transform: rotateX(10deg) rotateZ(-5deg); /* Chrome, Safari, Opera */
     transform: rotateX(10deg) rotateZ(-5deg);
-
-
 }
+
+ul{
+    width: 150px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top:5px;
+}
+
+a:link {
+    color: gray;
+}
+
+/* visited link */
+a:visited {
+    color: gray;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: gray;
+}
+
