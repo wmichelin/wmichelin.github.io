@@ -73,12 +73,12 @@ ul{
 }
 
 a:link {
-    color: gray;
+    color: lightgray;
 }
 
 /* visited link */
 a:visited {
-    color: gray;
+    color: lightgray;
 }
 
 /* mouse over link */
@@ -88,6 +88,6 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: gray;
+    color: lightgray;
 }
 
