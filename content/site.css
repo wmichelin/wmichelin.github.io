@@ -24,11 +24,16 @@ body{
 	
 }
 
+
+.headerContainer{
+	height: 84px;
+}
 .left-section{
 	margin-left: 5px;
 	width: 40%;
 	text-align: center;
 	display: inline-block;
+	float: left;
 }
 
 .right-section{
@@ -36,7 +41,6 @@ body{
 	width: 40%;
 	margin-top: 30px;
 	float: right;
-
 }
 
 .main-title{
