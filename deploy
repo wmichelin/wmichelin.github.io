@@ -10,7 +10,7 @@ def err_with_msg(msg):
     sys.exit(1)
 
 def deploy():
-    print subprocess.check_output(['git', 'push', 'origin', '{}:{}'.format(DESIRED_BRANCH, DESIRED_REMOTE)]).rstrip()
+    print subprocess.check_output(['git', 'push', '-f', 'origin', '{}:{}'.format(DESIRED_BRANCH, DESIRED_REMOTE)]).rstrip()
 
 curr_branch = subprocess.check_output('git symbolic-ref --short -q HEAD'.split()).rstrip()
 if curr_branch != DESIRED_BRANCH:
