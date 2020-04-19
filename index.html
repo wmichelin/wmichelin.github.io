@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Walter Michelin</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Walter Michelin</h1>
-    <h2>Software Engineer with <span id="years-of-experience"></span> years of experience</h2>
-    <h3>Technologies</h3>
-    <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Python</li>
-        <li>PHP</li>
-        <li>Cassandra</li>
-        <li>MySQL, PostgreSQL</li>
-    </ul>
-
-    <style>
-        html, body {
-            margin: 0;
-            padding-left: 8px;
-        }
-    </style>
-
+    <section class="main">
+        <div class="content">
+            <h1 class="header">Walter Michelin</h1>
+            <div class="subheader">
+                Software Engineer with 
+                <span id="years-of-experience"></span> 
+                years of experience
+            </div>
+            <span>
+                Technologies
+            </span>
+            <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Cassandra</li>
+                <li>MySQL, PostgreSQL</li>
+            </ul>
+        </div>
+    </section>
     <script>
         const yearsOfExperienceId = 'years-of-experience';
         const yearStarted = 2014;
