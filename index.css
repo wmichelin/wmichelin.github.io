@@ -1,5 +1,19 @@
+:root {
+    --bg-color: #dbd7d2;
+    --font-color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: black;
+        --font-color: #dbd7d2;
+    }
+}
+
+
 html, body {
     margin: 0;
+    background-color: var(--bg-color);
 }
 
 body, body > * {
@@ -28,7 +42,7 @@ h1 {
 }
 
 .content {
-    color: #333;
+    color: var(--font-color);
     padding: 0 24px;
     display: inline-block;
 }
