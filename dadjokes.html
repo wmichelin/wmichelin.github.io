@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dad Joke Generator</title>
+    <title>Dad Joke Generator - Walter Michelin</title>
     <style>
         * {
             margin: 0;
@@ -126,6 +126,24 @@
             font-style: italic;
         }
 
+        .back-link {
+            position: fixed;
+            top: 16px;
+            left: 24px;
+            color: #8B4513;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: opacity 0.2s ease;
+            background: rgba(255, 255, 255, 0.3);
+            z-index: 100;
+        }
+
+        .back-link:hover {
+            opacity: 0.7;
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
@@ -142,6 +160,7 @@
     </style>
 </head>
 <body>
+    <a href="index.html" class="back-link">← Home</a>
     <div class="container">
         <h1>🚜 Dad Joke Generator 👟</h1>
         <p class="subtitle">Fresh cuts and fresh jokes! 🌱</p>
