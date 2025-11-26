@@ -148,9 +148,39 @@
                 font-size: 1.1em;
             }
         }
+        .site-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 2px solid #8B4513;
+            z-index: 1000;
+        }
+
+        .site-nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .site-nav a:hover {
+            color: #8B4513;
+        }
+
+        body {
+            padding-top: 60px;
+        }
     </style>
 </head>
 <body>
+    <nav class="site-nav">
+        <a href="https://waltermichelin.com">← Back to waltermichelin.com</a>
+    </nav>
     <div class="container">
         <h1>🚜 Dad Joke Generator 👟</h1>
         <p class="subtitle">Fresh cuts and fresh jokes! 🌱</p>

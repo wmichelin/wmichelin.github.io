@@ -1,0 +1,464 @@
+:root {
+    --bg-color: #f9f7f4;
+    --font-color: #2d2d2d;
+    --accent-color: #d4a574;
+    --cta-color: #8b6f47;
+    --card-bg: #fff;
+    --border-color: #e0dbd5;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1613;
+        --font-color: #f5f1ed;
+        --accent-color: #b8956f;
+        --cta-color: #a88660;
+        --card-bg: #2d2520;
+        --border-color: #3d342e;
+        --shadow-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    line-height: 1.6;
+}
+
+/* Navigation */
+.site-nav {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-nav a {
+    color: var(--font-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+    color: var(--accent-color);
+}
+
+.site-nav a:focus {
+    outline: 2px solid var(--cta-color);
+    outline-offset: 4px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--accent-color) 100%);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--font-color);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: var(--font-color);
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--cta-color);
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    min-width: 200px;
+    min-height: 50px;
+}
+
+.cta-button:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.cta-button:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--font-color);
+}
+
+/* Services Section */
+.services {
+    background-color: var(--card-bg);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.service-card {
+    padding: 30px;
+    border-radius: 12px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
+
+.service-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--font-color);
+}
+
+.service-card p {
+    color: var(--font-color);
+    opacity: 0.85;
+}
+
+/* Pricing Section */
+.pricing {
+    background-color: var(--bg-color);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px var(--shadow-color);
+    transform: translateY(-5px);
+}
+
+.pricing-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    color: var(--font-color);
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin: 20px 0;
+}
+
+.price-unit {
+    font-size: 1rem;
+    color: var(--font-color);
+    opacity: 0.7;
+}
+
+.pricing-features {
+    list-style: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--font-color);
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+/* Promotions Section */
+.promotions {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--cta-color) 100%);
+    color: #fff;
+}
+
+.promotions .section-title {
+    color: #fff;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.promo-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.promo-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.promo-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--cta-color);
+}
+
+.promo-card p {
+    color: #333;
+}
+
+/* Trust Section */
+.trust {
+    background-color: var(--card-bg);
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.trust-item {
+    padding: 25px;
+    text-align: center;
+}
+
+.trust-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.trust-item p {
+    color: var(--font-color);
+    opacity: 0.85;
+}
+
+/* Contact Form Section */
+.contact {
+    background-color: var(--bg-color);
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--font-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.checkbox-group {
+    margin-top: 15px;
+}
+
+.checkbox-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.submit-btn {
+    width: 100%;
+    background: var(--cta-color);
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 50px;
+}
+
+.submit-btn:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.submit-btn:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--card-bg);
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer p {
+    color: var(--font-color);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 576px) {
+    .promo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-nav a {
+        margin: 0 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+        padding: 100px 20px;
+    }
+}
