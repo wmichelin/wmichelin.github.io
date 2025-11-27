@@ -163,28 +163,30 @@ body {
 
 .discount-percent {
     position: absolute;
-    top: 35px;
-    right: 15px;
+    top: 30px;
+    right: 25px;
     transform: rotate(45deg);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 900;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 1px;
     white-space: nowrap;
+    line-height: 1;
 }
 
 .discount-text {
     position: absolute;
-    top: 60px;
-    right: 8px;
+    top: 55px;
+    right: 5px;
     transform: rotate(45deg);
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     white-space: nowrap;
+    line-height: 1;
 }
 
 .hero-content {
@@ -624,15 +626,15 @@ section {
     }
 
     .discount-percent {
-        top: 25px;
-        right: 10px;
-        font-size: 1.1rem;
+        top: 20px;
+        right: 15px;
+        font-size: 1rem;
     }
 
     .discount-text {
-        top: 45px;
-        right: 5px;
-        font-size: 0.6rem;
+        top: 38px;
+        right: 3px;
+        font-size: 0.5rem;
     }
 }
 
