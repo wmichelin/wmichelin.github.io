@@ -169,10 +169,13 @@ body {
 .hero h1 {
     font-size: 2.75rem;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
     color: var(--font-color);
     line-height: 1.2;
     letter-spacing: -0.02em;
+    background-color: #E2F1FD;
+    border-radius: 12px;
+    padding: 12px;
 }
 
 .hero-intro {
