@@ -120,6 +120,13 @@ body {
     z-index: 0;
 }
 
+@media (max-width: 966px) {
+  .hero-photo-top-left {
+    display: none;
+  }
+}
+
+
 .hero-photo-top-left {
     position: absolute;
     top: 12%;
