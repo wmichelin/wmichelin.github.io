@@ -163,19 +163,7 @@
         <div class="container">
             <h2 class="section-title">Let's Preserve Your Memories Together</h2>
             <div class="form-container">
-                <form
-                    name="digitization-contact"
-                    method="POST"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
-                    action="success.html"
-                >
-                    <input type="hidden" name="form-name" value="digitization-contact" />
-
-                    <!-- Honeypot for spam protection -->
-                    <p class="hidden">
-                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                    </p>
+                <form id="contact-form" onsubmit="sendEmail(event)">
 
                     <div class="form-group">
                         <label for="name">Name *</label>
@@ -291,6 +279,38 @@
     <script>
         // Set current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Handle form submission with mailto
+        function sendEmail(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value || 'Not provided';
+            const photoCount = document.getElementById('photo-count').value || 'Not specified';
+            const message = document.getElementById('message').value || 'No additional message';
+
+            // Get selected photo types
+            const photoTypes = [];
+            const checkboxes = document.querySelectorAll('input[name="photo-type"]:checked');
+            checkboxes.forEach(cb => photoTypes.push(cb.value));
+            const photoTypeStr = photoTypes.length > 0 ? photoTypes.join(', ') : 'Not specified';
+
+            // Compose email body
+            const subject = encodeURIComponent('Photo Digitization Request from ' + name);
+            const body = encodeURIComponent(
+                'New Photo Digitization Request\n\n' +
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Phone: ' + phone + '\n' +
+                'Estimated Number of Photos: ' + photoCount + '\n' +
+                'Photo Type: ' + photoTypeStr + '\n\n' +
+                'Message:\n' + message
+            );
+
+            // Open mailto link
+            window.location.href = 'mailto:wmichelin+digitalmedia@gmail.com?subject=' + subject + '&body=' + body;
+        }
     </script>
 </body>
 </html>
