@@ -2,3 +2,6 @@
 /photodigitization   /photodigitization.html   200
 /success             /success.html             200
 /dadjokes            /dadjokes.html            200
+
+# Custom 404 page
+/*                   /404.html                 404
