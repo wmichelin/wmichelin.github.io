@@ -1,0 +1,12 @@
+{
+  "name": "waltermichelin-website",
+  "version": "1.0.0",
+  "description": "Walter Michelin's website with photo digitization services",
+  "scripts": {
+    "dev": "browser-sync start --server --files '*.html, *.css, *.js' --no-notify --no-open",
+    "start": "browser-sync start --server --files '*.html, *.css, *.js' --no-notify"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3"
+  }
+}
